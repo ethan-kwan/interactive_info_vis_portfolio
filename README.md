@@ -1,5 +1,5 @@
 # INFO 474: Interactive Info Visualization
-Hello 
+Hello Hello
 
 This repository has been updated to develop and deliver Homework #4 for INFO 474 @ UW, Autumn 2025. See more details in Canvas.
 
