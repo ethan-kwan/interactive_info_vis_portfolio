@@ -22,6 +22,9 @@
       <button type="button" class="tab-btn" data-target="tab3" data-sketch="sk3" role="tab">HWK 4. B</button>
       <button type="button" class="tab-btn" data-target="tab4" data-sketch="sk4" role="tab">HWK 4. C</button>
 
+      <!-- Homework 5 -->
+      <button type="button" class="tab-btn" data-target="hwk5" data-sketch="hwk5" role="tab">HWK 5</button>
+
       <!-- Examples -->
       <button type="button" class="tab-btn" data-target="tab5" data-sketch="sk5" role="tab">Ex 1</button>
       <button type="button" class="tab-btn" data-target="tab6" data-sketch="sk6" role="tab">Ex 2</button>
@@ -179,6 +182,74 @@
           <!-- <img src="images/sk4-evolution-3.png" alt="Sketch #C - step 3" /> -->
           <figcaption>Step 3 — refined visuals and annotations</figcaption>
         </figure>
+      </div>
+    </section>
+
+    <!-- Homework 5 -->
+    <section id="hwk5" class="tab-content" role="tabpanel">
+      <div class="hwk5-layout">
+        <div class="hwk5-viz">
+          <div id="sketch-container-hwk5" class="sketch-container"></div>
+          <div class="hwk5-story">
+            <p>
+              Looking across the bars, the pattern is not a simple “the taller the better” curve. Very short and very
+              tall players appear in smaller numbers and have more modest average scoring, while the strongest scoring
+              cluster sits in the middle height ranges. These mid‑height players (often guards and wings) tend to handle
+              the ball more, create their own shots, and stay on the floor for heavy minutes, which likely drives up
+              their career points per game.
+            </p>
+            <p>
+              The <code>n=</code> labels reveal that some eye‑catching bars are based on far fewer players than others.
+              That makes the tall extremes feel more like special cases, whereas the mid‑height bands combine dozens of
+              careers into a stable average. Overall, the chart suggests that while height is an advantage in many parts
+              of basketball, the league’s most reliable scorers tend to live in a “sweet spot” of height where skill,
+              role, and usage all line up. Shorter players often have to work harder just to get shots off over longer
+              defenders, and many super‑tall players are asked to focus on rim protection and rebounding rather than
+              high‑volume shooting, which naturally pulls their points‑per‑game averages down.
+            </p>
+          </div>
+        </div>
+        <aside class="hwk5-notes" aria-label="Homework 5 explanation">
+          <h3>HWK 5 — Visualization notes</h3>
+          <p>
+            <strong>Why this dataset &amp; story:</strong> I chose the NBA player index because it is familiar, rich, and
+            already organized at the player level. Height and scoring are intuitive metrics for basketball fans, so
+            “career points per game by height” becomes a straightforward and interesting question: do taller players
+            actually score more over their careers, or is that just a stereotype?
+          </p>
+          <p>
+            <strong>Title &amp; framing:</strong> The title “The taller the better? 🏀” is intentionally a little
+            provocative while still clearly hinting at the comparison. It invites the viewer to test a common belief
+            rather than just stating the answer up front.
+          </p>
+          <p>
+            <strong>Narrative &amp; genre:</strong> This is mostly author‑driven: I choose the bins, the minimum seasons
+            filter, and the framing question, while the user explores by visually comparing bars. The visualization is
+            an infographic‑style bar chart, with storytelling elements like a highlighted bar, explanatory subtitle, and
+            small annotations for sample size.
+          </p>
+          <p>
+            <strong>How to read it:</strong> Each bar shows the average <em>career</em> points per game for players
+            whose height falls within a 2‑inch bin, limited to players who have played at least a minimum number of
+            seasons. The highlighted bar marks the height range with the highest average PPG, and the <code>n=</code>
+            labels show how many players contribute to each bin so you can judge which averages are more stable.
+          </p>
+          <p>
+            <strong>Design principles:</strong> The main priorities were comparability, stability, and trust. I used
+            simple vertical bars on a shared baseline so height groups are easy to compare, chose 2‑inch bins to balance
+            detail and noise, filtered to multi‑season careers so one‑year outliers do not dominate, and surfaced sample
+            size directly in the chart. A warm highlight color on the peak bin and lighter gridlines create a clear
+            visual hierarchy.
+          </p>
+          <p>
+            <strong>Clarity, hierarchy, memorability:</strong> Clarity comes from a single main mapping (height bins on
+            the x‑axis, average career PPG on the y‑axis) and a title/subtitle that restate that mapping in plain
+            language. Hierarchy is guided by visual weight: the title and highlighted bar draw attention first, followed
+            by axis labels and then footnotes. Memorability comes from tying the chart to a question fans already ask
+            (“do taller players really score more?”) and from labeling height ranges in familiar feet‑and‑inches
+            notation.
+          </p>
+        </aside>
       </div>
     </section>
 

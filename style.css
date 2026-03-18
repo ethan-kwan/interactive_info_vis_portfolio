@@ -55,3 +55,41 @@ canvas {
   height: auto;
   display: block;
 }
+
+.hwk5-layout {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  align-items: flex-start;
+}
+
+.hwk5-viz {
+  flex: 2;
+  min-width: 0;
+}
+
+.hwk5-story {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #1f2933;
+}
+
+.hwk5-notes {
+  flex: 1;
+  min-width: 260px;
+  max-width: 420px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(51, 65, 85, 0.15);
+  background: rgba(245, 247, 250, 0.9);
+}
+
+@media (max-width: 900px) {
+  .hwk5-layout {
+    flex-direction: column;
+  }
+  .hwk5-notes {
+    max-width: none;
+  }
+}
